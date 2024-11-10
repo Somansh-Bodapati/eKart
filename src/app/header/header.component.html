@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-</head>
+<head><title>Responsive Nav Bar</title></head>
 <body>
-<title>eKart</title>
-<h2>Welcome to eKart</h2>
-Lets get this greatness of taking over Angular started</body>
+<app-top-menu></app-top-menu>
+    <nav class="navbar"><div class="logo">eKart</div>
+    <ul class="nav-links">
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="products">Products</a></li>
+      <li><a href="cart">Cart</a></li>
+      <li><a href="account">Account</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    </nav>
+    <h2>Welcome to eKart</h2>
+    <p>Lets get this greatness of taking over Angular started</p>
+</body>
 </html>
