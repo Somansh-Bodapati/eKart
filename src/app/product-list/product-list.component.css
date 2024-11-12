@@ -8,4 +8,10 @@
   position: relative;
   overflow: hidden;
   color: black;
+  padding: 10px 30px;
+}
+
+button{
+  padding: 5px 10px;
+  margin: 0 10px;
 }
