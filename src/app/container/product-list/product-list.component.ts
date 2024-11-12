@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {NgForOf} from '@angular/common';
 
 @Component({
   selector: 'product-list',
   standalone: true,
-  imports: [],
+  imports: [
+    NgForOf
+  ],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })

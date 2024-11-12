@@ -1,5 +1,5 @@
 <div class="products-container">
-  <div class="prouct-item">
+  <div class="product-item" *ngFor="let prod of products">
     <div class="wishlist-sale-container">
       <div class="add-to-wishlist">
         <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -7,12 +7,12 @@
       <div class="on-sale-tag">75% OFF</div>
     </div>
     <div class="product-image">
-      <img src="IMGSRC" class="product-image">
+      <img [src]="prod.imageURL" class="product-image">
     </div>
-    <div class="add-to-price">PRICE</div>
-    <div class="product-name">NAME</div>
-    <div class="product-category">GENDER . CATEGORY . BRAND</div>
-    <div class="product-available-colors">$COLORCOUNT Colors . Best Seller</div>
+    <div class="add-to-price"> {{ prod.price }}</div>
+    <div class="product-name"> {{ prod.name }}</div>
+    <div class="product-category">{{ prod.gender }} . {{ prod.category }} . {{ prod.brand }}</div>
+    <div class="product-available-colors"> {{ prod.color.length }} Colors . Best Seller</div>
   </div>
 
 </div>
