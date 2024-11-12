@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {HeaderComponent} from './header/header.component';
 import {TopMenuComponent} from './header/top-menu/top-menu.component';
-import {ProductListComponent} from './product-list/product-list.component';
+import {ContainerComponent} from './container/container.component';
 import {FormsModule} from '@angular/forms';
 
 // @ts-ignore
@@ -12,7 +12,7 @@ import {FormsModule} from '@angular/forms';
   imports: [
     HeaderComponent,
     TopMenuComponent,
-    ProductListComponent,
+    ContainerComponent,
     FormsModule,
   ],
   styleUrls: ['./app.component.css']

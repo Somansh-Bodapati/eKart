@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 import {SearchComponent} from './search/search.component';
 import {NgForOf} from '@angular/common';
-import {of} from 'rxjs';
 
 
 @Component({
-  selector: 'product-list',
+  selector: 'container',
   standalone: true,
   imports: [SearchComponent, NgForOf],
-  templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css'
+  templateUrl: './container.component.html',
+  styleUrl: './container.component.css'
 })
-export class ProductListComponent {
+export class ContainerComponent {
   listOfString: string[] = ['Mark', 'Steve', 'Harry', 'John', 'Sarah'];
 }
 
