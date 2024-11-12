@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {HeaderComponent} from './header/header.component';
-import {TopHeaderComponent} from './top-header/top-header.component';
 import {TopMenuComponent} from './header/top-menu/top-menu.component';
+import {ProductListComponent} from './product-list/product-list.component';
 
 // @ts-ignore
 @Component({
@@ -9,9 +9,9 @@ import {TopMenuComponent} from './header/top-menu/top-menu.component';
   standalone: true,
   templateUrl: './app.component.html',
   imports: [
-    TopHeaderComponent,
     HeaderComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    ProductListComponent,
   ],
   styleUrls: ['./app.component.css']
 })
