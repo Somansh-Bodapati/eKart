@@ -1,5 +1,4 @@
 <div class="Product">
-  <product-search></product-search>
   <!--<p>Name: {{ product.name }}</p>
   <p>Price: {{ '$' + product.price }}</p>
   <p>Color: {{ product.color }}</p>
@@ -10,6 +9,12 @@
   <button (click)="decrement()">-</button>
   <span>{{ addToCart }}</span>
   <button (click)="increment()">+</button>
-  <!--input (input)="onValueEntered($event)">
+  <input (input)="onValueEntered($event)">
   <p>Input name: {{ name }}</p> -->
+
+  <product-search></product-search>
+
+  <div *ngFor="let item of listOfString">
+    <p>Current element of array is: {{ item }}</p>
+  </div>
 </div>
