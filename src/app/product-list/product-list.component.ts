@@ -8,13 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  name = "John Doe";
+  //name = "John Doe";
+  addToCart = 0;
   product = {
     name: 'iPhone X',
     price: 789,
     color: 'Black',
     discount: 8.5,
-    inStock: 1,
+    inStock: 3,
   }
 
   getDiscountedPrice() {
@@ -22,7 +23,21 @@ export class ProductListComponent {
   }
 
   onValueEntered(event: any) {
-    this.name = event.target.value;
-    console.log(event.target.value);
+    //this.name = event.target.value;
+    //console.log(event.target.value);
   }
+
+  increment(){
+    if (this.addToCart < this.product.inStock) {
+      this.addToCart++;
+    }
+  }
+
+  decrement(){
+    if (this.addToCart > 0) {
+      this.addToCart--;
+    }
+  }
+
+
 }
