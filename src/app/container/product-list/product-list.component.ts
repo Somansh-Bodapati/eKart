@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import {NgForOf, NgIf} from '@angular/common';
+import {NgForOf, NgIf, NgStyle} from '@angular/common';
 
 @Component({
   selector: 'product-list',
   standalone: true,
   imports: [
     NgForOf,
-    NgIf
+    NgIf,
+    NgStyle
   ],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
