@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {HeaderComponent} from './header/header.component';
-import {TopMenuComponent} from './header/top-menu/top-menu.component';
+import {TopMenuComponent} from './top-menu/top-menu.component';
 import {ContainerComponent} from './container/container.component';
 import {FormsModule} from '@angular/forms';
 

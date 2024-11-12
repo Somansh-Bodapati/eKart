@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {TopMenuComponent} from "./top-menu/top-menu.component";
+import {TopMenuComponent} from "../top-menu/top-menu.component";
 import {NgForOf} from '@angular/common';
 
 @Component({
