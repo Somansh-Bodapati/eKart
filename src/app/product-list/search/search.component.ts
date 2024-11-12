@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'product-search',
   standalone: true,
-  imports: [],
+  imports: [
+    FormsModule
+  ],
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })
